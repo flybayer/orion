@@ -164,6 +164,8 @@ const baseColors = {
 export const colors = {
   ...baseColors,
   text: baseColors.black,
+  label: baseColors.black,
+  heading: baseColors.black,
   primary: baseColors.black,
   element: baseColors.black,
   elementFocus: baseColors.black,
@@ -188,6 +190,8 @@ export const fonts = {
     '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
   mono: '"SF Mono", "Roboto Mono", Menlo, monospace',
 }
+
+export const lineHeights = [1.15, 1.25, 1.5]
 
 export const shadows = [
   "none",
@@ -228,4 +232,5 @@ export default {
   colors,
   radii,
   shadows,
+  lineHeights,
 }

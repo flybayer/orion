@@ -11,12 +11,44 @@ import OutlineButton from "./components/OutlineButton"
 import InputBase from "./components/InputBase"
 import MinimalInput from "./components/MinimalInput"
 import Input from "./components/Input"
+import Textarea from "./components/Textarea"
+import Label from "./components/Label"
+import Text from "./components/Text"
+import SmallText from "./components/SmallText"
+import LargeText from "./components/LargeText"
+import Heading from "./components/Heading"
 
 class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
         <Grid gridGap={3} m={3} justifyItems="start">
+          <Box flexDirection="column">
+            <Heading>Orion Component Library</Heading>
+            <Text>
+              “Hi there! I'm Professor Franklin Risby. Pleased to make your acquaintance. We'll be
+              spending some time together, as I'm supposed to teach you a bit about functional
+              programming. But enough about me, what about you? I'm hoping that you're at least a
+              bit familiar with the JavaScript language, have a teensy bit of Object-Oriented
+              experience, and fancy yourself a working class programmer. You don't need to have a
+              PhD in Entomology, you just need to know how to find and kill some bugs.
+            </Text>
+            <Text>
+              I won't assume that you have any previous functional programming knowledge, because we
+              both know what happens when you assume. I will, however, expect you to have run into
+              some of the unfavorable situations that arise when working with mutable state,
+              unrestricted side effects, and unprincipled design. Now that we've been properly
+              introduced, let's get on with it.”
+            </Text>
+          </Box>
+          <SmallText>Hint: it's name is Orion</SmallText>
+          <LargeText>
+            I won't assume that you have any previous functional programming knowledge, because we
+            both know what happens when you assume. I will, however, expect you to have run into
+            some of the unfavorable situations that arise when working with mutable state,
+            unrestricted side effects, and unprincipled design. Now that we've been properly
+            introduced, let's get on with it.
+          </LargeText>
           <ButtonBase>Button Base</ButtonBase>
           <MinimalButton>Minimal Button</MinimalButton>
           <MinimalButton>
@@ -100,8 +132,11 @@ class App extends Component {
             Big Yellow Button
           </Button>
           <OutlineButton>Outline Button</OutlineButton>
-          <InputBase />
-          <MinimalInput />
+          <Textarea />
+          <Label>
+            Minimal Input
+            <MinimalInput mt={1} />
+          </Label>
           <MinimalInput placeholder="Your name here" />
           <MinimalInput disabled value="mister name" />
           <Input placeholder="Enter your name" />
@@ -113,8 +148,15 @@ class App extends Component {
             <MinimalInput placeholder="Email" mr={2} />
             <Button borderRadius={0}>Subscribe</Button>
           </Box>
-          <Input type="number" placeholder="type=number" />
-          <Input type="email" placeholder="type=email" />
+          <Label>Standalone Label</Label>
+          <Label>
+            Number Input
+            <Input type="number" placeholder="type=number" mt={1} />
+          </Label>
+          <Label flexDirection="row">
+            Email Input
+            <Input type="email" placeholder="type=email" />
+          </Label>
           <Input type="search" placeholder="type=search" />
         </Grid>
       </ThemeProvider>
