@@ -17,7 +17,7 @@ const Heading = system(
   "fontFamily",
   "fontSize",
   "fontWeight",
-  "fontStyle",
+  // "fontStyle",
   "textAlign",
   "lineHeight",
   "letterSpacing",

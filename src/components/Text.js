@@ -18,7 +18,7 @@ const Text = system(
   "fontFamily",
   "fontSize",
   "fontWeight",
-  "fontStyle",
+  // "fontStyle",
   "textAlign",
   "lineHeight",
   "letterSpacing",

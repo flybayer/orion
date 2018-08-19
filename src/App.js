@@ -11,8 +11,13 @@ import OutlineButton from "./components/OutlineButton"
 import InputBase from "./components/InputBase"
 import MinimalInput from "./components/MinimalInput"
 import Input from "./components/Input"
+import LabeledInput from "./components/LabeledInput"
 import Textarea from "./components/Textarea"
 import Label from "./components/Label"
+import Checkbox from "./components/Checkbox"
+import LabeledCheckbox from "./components/LabeledCheckbox"
+import Radio from "./components/Radio"
+import LabeledRadio from "./components/LabeledRadio"
 import Text from "./components/Text"
 import SmallText from "./components/SmallText"
 import LargeText from "./components/LargeText"
@@ -133,7 +138,11 @@ class App extends Component {
           </Button>
           <OutlineButton>Outline Button</OutlineButton>
           <Textarea />
-          <Label>
+          <LabeledCheckbox label="I love checkboxes" />
+          <LabeledCheckbox label="I love radios" />
+          <LabeledRadio label="Coffee" />
+          <LabeledRadio label="Tea" />
+          <Label flexDirection="column">
             Minimal Input
             <MinimalInput mt={1} />
           </Label>
@@ -149,14 +158,15 @@ class App extends Component {
             <Button borderRadius={0}>Subscribe</Button>
           </Box>
           <Label>Standalone Label</Label>
-          <Label>
+          <Label flexDirection="column">
             Number Input
             <Input type="number" placeholder="type=number" mt={1} />
           </Label>
-          <Label flexDirection="row">
+          <Label flexDirection="column">
             Email Input
             <Input type="email" placeholder="type=email" />
           </Label>
+          <LabeledInput label="LabeledInput" labelProps={{ my: 3 }} placeholder="Type something" />
           <Input type="search" placeholder="type=search" />
         </Grid>
       </ThemeProvider>
