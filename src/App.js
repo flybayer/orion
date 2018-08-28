@@ -22,6 +22,8 @@ import Text from "./components/Text"
 import SmallText from "./components/SmallText"
 import LargeText from "./components/LargeText"
 import Heading from "./components/Heading"
+import Ol from "./components/Ol"
+import Ul from "./components/Ul"
 
 class App extends Component {
   render() {
@@ -44,6 +46,20 @@ class App extends Component {
               some of the unfavorable situations that arise when working with mutable state,
               unrestricted side effects, and unprincipled design. Now that we've been properly
               introduced, let's get on with it.”
+            </Text>
+            <Ol>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>NASA</li>
+            </Ol>
+            <Ul>
+              <li>Sun</li>
+              <li>Moon</li>
+              <li>Stars</li>
+            </Ul>
+            <Text>
+              I won't assume that you have any previous functional programming knowledge, because we
+              both know what happens when you assume.
             </Text>
           </Box>
           <SmallText>Hint: it's name is Orion</SmallText>

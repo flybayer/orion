@@ -25,7 +25,11 @@ const Text = system(
   "minWidth",
   "maxWidth",
   props => css`
-    & + & {
+    & + &,
+    & + ol,
+    & + ul,
+    ol + &,
+    ul + & {
       margin-top: ${themeGet("space.3")(props)};
     }
   `
