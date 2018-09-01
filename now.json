@@ -1,0 +1,9 @@
+{
+  "type": "static",
+  "static": {
+    "public": ".docz/dist",
+    "rewrites": [
+      { "source": "**", "destination": "/index.html" }
+    ]
+  }
+}

@@ -1,21 +1,22 @@
 {
-  "name": "nasa",
+  "name": "orion",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "docz dev",
+    "build": "docz build"
+  },
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
     "styled-components": "^3.3.3",
     "system-components": "^3.0.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
   "devDependencies": {
-    "eslint_d": "^6.0.1"
+    "@mdx-js/runtime": "^0.15.0",
+    "docz": "^0.10.3",
+    "docz-theme-default": "^0.10.3",
+    "eslint_d": "^7.1.0",
+    "fs-extra": "^7.0.0"
   }
 }
