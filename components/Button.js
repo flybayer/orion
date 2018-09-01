@@ -3,7 +3,7 @@ import { css } from "styled-components"
 import ButtonBase from "./ButtonBase"
 
 const Button = system(
-  // 1st arg is default props, rest are styled-component CSS strings or objects
+  // 1st argument is default props
   {
     is: ButtonBase,
     color: "white",

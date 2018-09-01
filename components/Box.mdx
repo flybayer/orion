@@ -1,69 +1,25 @@
 import { Playground } from "docz"
 import Box from "./Box"
-import BoxSource from "./tmp-source/Box.md"
+import Source from "./tmp-source/Box.md"
 
 # Box
 
 Box is your general purpose flexbox `div`
 
-## Source 1
-
-<BoxSource />
-
-## Source 2
-
-```jsx
-import system from "system-components"
-
-const Box = system(
-  // 1st arg is default props, rest are styled-component CSS strings or objects
-  {
-    display: "flex",
-    flexDirection: "row",
-  },
-  "space",
-  "color",
-  "position",
-  "display",
-  "width",
-  "height",
-  "minWidth",
-  "maxWidth",
-  "minHeight",
-  "maxHeight",
-  "borders",
-  "borderRadius",
-  "flex",
-  "flexDirection",
-  "flexWrap",
-  "alignItems",
-  "alignSelf",
-  "justifyContent",
-  "justifySelf",
-  "gridColumn",
-  "gridRow",
-  "gridArea",
-  "overflow"
-)
-
-Box.displayName = "Box"
-export default Box
-```
-
 ## Examples
 
 <Playground>
-  <Box>
+  <Box border={1}>
   <Box width="2rem" height="2rem" bg="green.4" m={2}>
   1
   </Box>
-  <Box width="2rem" height="2rem" bg="green.4" m={2}>
+  <Box width="2rem" height="2rem" bg="blue.4" m={2}>
   2
   </Box>
   </Box>
 </Playground>
 
-<Playground>
-  <Box border={1}>Some content</Box>
-</Playground>
+## Source Code
+
+<Source />
 

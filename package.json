@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "docz dev",
-    "build": "docz build"
+    "start": "run-p watch-source dev",
+    "dev": "docz dev",
+    "watch-source": "node scripts/create-source-md.js watch",
+    "build-source": "node scripts/create-source-md.js",
+    "prebuild": "yarn build-source",
+    "build": "docz build",
+    "deploy": "yarn build && now .docz/dist && now alias"
   },
   "dependencies": {
     "react": "^16.4.1",
@@ -14,9 +19,11 @@
   },
   "devDependencies": {
     "@mdx-js/runtime": "^0.15.0",
+    "chokidar": "^2.0.4",
     "docz": "^0.10.3",
     "docz-theme-default": "^0.10.3",
     "eslint_d": "^7.1.0",
-    "fs-extra": "^7.0.0"
+    "fs-extra": "^7.0.0",
+    "npm-run-all": "^4.1.3"
   }
 }

@@ -1,7 +1,7 @@
 import system from "system-components"
 
 const Box = system(
-  // 1st arg is default props, rest are styled-component CSS strings or objects
+  // 1st argument is default props
   {
     display: "flex",
     flexDirection: "row",

@@ -1,9 +1,10 @@
 {
   "type": "static",
+  "alias": "orion",
   "static": {
     "public": ".docz/dist",
     "rewrites": [
-      { "source": "**", "destination": "/index.html" }
+      { "source": "*", "destination": "/index.html" }
     ]
   }
 }
