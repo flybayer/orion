@@ -4,20 +4,38 @@ order: 1
 ---
 import Heading from '../components/Heading'
 
-<Heading fontSize={6}>Orion</Heading>
-<Heading is="h2">A Component Library Generator for React</Heading>
+<Heading fontSize={6} fontWeight={600} mt={5}>Orion</Heading>
+<Heading is="h2" fontWeight={600}>A Component Library Generator for React</Heading>
 
-Works with:
+### Component libraries are great but, *what happens when you need to override some styles or behavior?*
+
+Most likely you go into a dark room and engage in some hacky CSS overrides or node_modules monkey-patching. Woo hoo! It works. Well, at least until the next component library update. Then you have to fix it all over again :(
+
+---
+
+After experiencing that a few times, I built my own base components for each project. I soon realized I was copy and pasting the same base components to each new project I started. And then I had an idea...
+
+*What if I had a command line tool to easily install my base components directly into any project?!*
+
+That'd be amazing! I could use a component library without importing from npm and dealing with limitations. Anytime I need to change a style or behavior, I just edit the source right in my project's file system.
+
+
+### Guiding Principles
+
+- Ready out of the box for 80% of usecases but easily modified for the rest
+  - Example: default adds margin between sequential `<Text>` blocks
+- Based on real world physics
+- Accessible
+- Blazing performance
+- Friendly
+
+### Works With
 - `styled-components`
 - `emotion`
 
 
-### Project Principles
+### FAQ
 
-1. Feel like native controls
-2. Based on real world physics
-3. Accessible out of the box
-4. Blazing performance
-5. Friendly
-6. Ready out of the box for 80% of usecases but easily modified for the rest
-  1. Example: default adds margin between sequential `<Text>` blocks
+**But how do you handle updates?**
+
+My opinion is component libraries shouldn't automatically update or change the styles in your app. Since Orion's components are presentational, there is no behavior to update or fix. If you encounter a style issue, you can easily check the lastest Orion source and manually port any changes.
