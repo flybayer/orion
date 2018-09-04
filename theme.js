@@ -1,4 +1,4 @@
-import { injectGlobal } from "styled-components";
+import { injectGlobal } from "styled-components"
 
 const baseColors = {
   black: "#000000",
@@ -13,7 +13,7 @@ const baseColors = {
     "#868e96",
     "#495057",
     "#343a40",
-    "#212529"
+    "#212529",
   ],
   red: [
     "#fff5f5",
@@ -25,7 +25,7 @@ const baseColors = {
     "#fa5252",
     "#f03e3e",
     "#e03131",
-    "#c92a2a"
+    "#c92a2a",
   ],
   pink: [
     "#fff0f6",
@@ -37,7 +37,7 @@ const baseColors = {
     "#e64980",
     "#d6336c",
     "#c2255c",
-    "#a61e4d"
+    "#a61e4d",
   ],
   grape: [
     "#f8f0fc",
@@ -49,7 +49,7 @@ const baseColors = {
     "#be4bdb",
     "#ae3ec9",
     "#9c36b5",
-    "#862e9c"
+    "#862e9c",
   ],
   violet: [
     "#f3f0ff",
@@ -61,7 +61,7 @@ const baseColors = {
     "#7950f2",
     "#7048e8",
     "#6741d9",
-    "#5f3dc4"
+    "#5f3dc4",
   ],
   indigo: [
     "#edf2ff",
@@ -73,7 +73,7 @@ const baseColors = {
     "#4c6ef5",
     "#4263eb",
     "#3b5bdb",
-    "#364fc7"
+    "#364fc7",
   ],
   blue: [
     "#e7f5ff",
@@ -85,7 +85,7 @@ const baseColors = {
     "#228be6",
     "#1c7ed6",
     "#1971c2",
-    "#1864ab"
+    "#1864ab",
   ],
   cyan: [
     "#e3fafc",
@@ -97,7 +97,7 @@ const baseColors = {
     "#15aabf",
     "#1098ad",
     "#0c8599",
-    "#0b7285"
+    "#0b7285",
   ],
   teal: [
     "#e6fcf5",
@@ -109,7 +109,7 @@ const baseColors = {
     "#12b886",
     "#0ca678",
     "#099268",
-    "#087f5b"
+    "#087f5b",
   ],
   green: [
     "#ebfbee",
@@ -121,7 +121,7 @@ const baseColors = {
     "#40c057",
     "#37b24d",
     "#2f9e44",
-    "#2b8a3e"
+    "#2b8a3e",
   ],
   lime: [
     "#f4fce3",
@@ -133,7 +133,7 @@ const baseColors = {
     "#82c91e",
     "#74b816",
     "#66a80f",
-    "#5c940d"
+    "#5c940d",
   ],
   yellow: [
     "#fff9db",
@@ -145,7 +145,7 @@ const baseColors = {
     "#fab005",
     "#f59f00",
     "#f08c00",
-    "#e67700"
+    "#e67700",
   ],
   orange: [
     "#fff4e6",
@@ -157,47 +157,47 @@ const baseColors = {
     "#fd7e14",
     "#f76707",
     "#e8590c",
-    "#d9480f"
-  ]
-};
+    "#d9480f",
+  ],
+}
 
-export const colors = {
+const colors = {
   ...baseColors,
   text: baseColors.black,
   label: baseColors.black,
   heading: baseColors.black,
   primary: baseColors.black,
   element: baseColors.black,
-  elementFocus: baseColors.black
-};
+  elementFocus: baseColors.black,
+}
 
-export const breakpoints = ["32rem", "48rem", "64rem", "80rem"];
+const breakpoints = ["32rem", "48rem", "64rem", "80rem"]
 
-export const space = [0, "0.25rem", "0.5rem", "1rem", "2rem", "4rem", "8rem"];
+const space = [0, "0.25rem", "0.5rem", "1rem", "2rem", "4rem", "8rem", "16rem", "32rem", "64rem"]
 
-export const fontSizes = [12, 14, 16, 20, 24, 32, 48, 64, 72, 96];
+const fontSizes = [12, 14, 16, 21, 28, 38, 50, 66, 88, 117]
 
-export const fontWeights = {
+const fontWeights = {
   normal: 400,
-  bold: 700
-};
+  bold: 700,
+}
 
-export const radii = [0, 3, 5, 8];
+const radii = [0, 3, 5, 8]
 
-export const fonts = {
+const fonts = {
   // 0: 'system-ui, sans-serif',
   sans:
     '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-  mono: '"SF Mono", "Roboto Mono", Menlo, monospace'
-};
+  mono: '"SF Mono", "Roboto Mono", Menlo, monospace',
+}
 
-export const lineHeights = [1.15, 1.25, 1.5];
+const lineHeights = [1.15, 1.25, 1.5]
 
-export const shadows = [
+const shadows = [
   "none",
   `inset 0 0 0 1px ${colors.gray}`,
-  `inset 0 0 0 1px ${colors.gray}, 0 0 4px ${colors.gray}`
-];
+  `inset 0 0 0 1px ${colors.gray}, 0 0 4px ${colors.gray}`,
+]
 
 // -----------------
 // Global CSS Styles
@@ -221,7 +221,7 @@ injectGlobal`
     /* When width or height are set, include margin, padding, and border in calculation */
     box-sizing: border-box;
   }
-`;
+`
 
 export default {
   breakpoints,
@@ -232,5 +232,5 @@ export default {
   colors,
   radii,
   shadows,
-  lineHeights
-};
+  lineHeights,
+}
