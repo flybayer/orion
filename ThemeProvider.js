@@ -1,5 +1,10 @@
 import React from "react"
 import { ThemeProvider } from "styled-components"
-import theme from "./theme"
+import theme, { GlobalStyles } from "./theme"
 
-export default props => <ThemeProvider theme={theme} {...props} />
+export default props => (
+  <>
+    <GlobalStyles />
+    <ThemeProvider theme={theme} {...props} />
+  </>
+)

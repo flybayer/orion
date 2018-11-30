@@ -30,7 +30,7 @@ The brilliance of this approach is you then fully own the source code for your c
 
 While Orion works great for installing the whole kit and caboodle, **you can also install components individually** for a choose-your-own-adventure.
 
-Now we call this zero dependency but just as *serverless* still has servers, Orion does add some dependencies. Namely `styled-components` or `emotion` along with `system-components`. But the kicker is these will be added to your project.json where you are fully in control. Orion is never listed in your package.json.
+Now we call this zero dependency but just as *serverless* still has servers, Orion does add some dependencies. Namely `styled-components` or `emotion` along with `styled-system`. But the kicker is these will be added to your project.json where you are fully in control. Orion is never listed in your package.json.
 
 ## Componentized Styles with CSS-in-JS
 
@@ -76,7 +76,7 @@ Orion removes the need for something like [normalize.css](https://github.com/nec
 
 The severest offender you see in the wild is not removing hover styles on touch devices. You are a victim to this each time you have to tap twice to follow a link. The first tap shows the hover style; the second activates the link. Orion properly handles this out of the box.
 
-Another subtle but important detail is Orion disables the default iOS gray overlay when touching a button. Instead, Orion shows the same thing as clicking the button, typically a scale(0.97).
+Another subtle but important detail is Orion disables the default iOS gray overlay when touching a button. Instead, Orion shows the same thing as clicking the button, typically a `scale(0.97)`.
 
 ## Consistent But Flexible Design System
 
@@ -89,7 +89,7 @@ const space = [0, "0.25rem", "0.5rem", "1rem", "2rem", "4rem", "8rem", "16rem", 
 const fontSizes = [12, 14, 16, 21, 28, 38, 50, 66, 88, 117]
 ```
 
-Default colors are from _____
+Default colors are from __FILL IN__
 
 This design system is baked into the Orion component API thanks to [styled-system](http://jxnblk.com/styled-system/).
 
@@ -108,4 +108,4 @@ For interactive components like modals and dropdown menus, Orion uses [Reach UI]
 
 **But how do you handle updates?**
 
-My opinion is component libraries shouldn't automatically update or change the styles in your app. Since Orion's components are presentational, there is no behavior to update or fix. In case of major API changes to styled-components or system-components, you can check the latest Orion source and port the neccesary changes to your project.
+My opinion is component libraries shouldn't automatically update or change the styles in your app. Since Orion's components are presentational, there is no behavior to update or fix. In case of major API changes to styled-components or styled-system, you can check the latest Orion source and port the neccesary changes to your project.

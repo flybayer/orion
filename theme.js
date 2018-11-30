@@ -1,4 +1,4 @@
-import { injectGlobal } from "styled-components"
+import { createGlobalStyle } from "styled-components"
 
 const baseColors = {
   black: "#000000",
@@ -202,7 +202,7 @@ const shadows = [
 // -----------------
 // Global CSS Styles
 // -----------------
-injectGlobal`
+export const GlobalStyles = createGlobalStyle`
   /**
   * 1. Correct the line height in all browsers.
   * 2. Prevent adjustments of font size after orientation changes in iOS.

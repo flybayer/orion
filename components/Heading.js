@@ -1,29 +1,40 @@
-import system from "system-components"
+import styled from "styled-components"
+import {
+  space,
+  color,
+  position,
+  fontFamily,
+  fontSize,
+  fontWeight,
+  fontStyle,
+  textAlign,
+  lineHeight,
+  letterSpacing,
+  minWidth,
+  maxWidth,
+} from "styled-system"
 
-const Heading = system(
-  // 1st arg is default props, rest are styled-component CSS strings or objects
-  {
-    is: "h1",
-    color: "heading",
-    fontSize: 5,
-    fontWeight: "bold",
-    mt: 0,
-    mb: 3,
-    lineHeight: 2,
-  },
-  "space",
-  "color",
-  "position",
-  "fontFamily",
-  "fontSize",
-  "fontWeight",
-  // "fontStyle",
-  "textAlign",
-  "lineHeight",
-  "letterSpacing",
-  "minWidth",
-  "maxWidth"
-)
-
+let Heading = styled.h1`
+  ${space}
+  ${color}
+  ${position}
+  ${fontFamily}
+  ${fontSize}
+  ${fontWeight}
+  ${fontStyle}
+  ${textAlign}
+  ${lineHeight}
+  ${letterSpacing}
+  ${minWidth}
+  ${maxWidth}
+`
+Heading.defaultProps = {
+  color: "heading",
+  fontSize: 5,
+  fontWeight: "bold",
+  mt: 0,
+  mb: 3,
+  lineHeight: 2,
+}
 Heading.displayName = "Heading"
 export default Heading
