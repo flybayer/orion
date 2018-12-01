@@ -7,5 +7,5 @@ Todo
 
 ## TODO
 
-- Use custom theme and set `showPlaygroundEditor: true`
+
 
