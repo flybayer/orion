@@ -41,7 +41,7 @@ Text.defaultProps = {
   color: "text",
   fontSize: 3,
   m: 0,
-  maxWidth: "72ch",
+  maxWidth: "40em",
   lineHeight: 2,
 }
 Text.displayName = "Text"

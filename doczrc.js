@@ -18,7 +18,6 @@ export default {
   title: "🌃 Orion",
   repository: "https://github.com/flybayer/orion",
   theme: "docz/theme.js",
-  wrapper: "ThemeProvider.js",
   mdPlugins: [emoji],
   modifyBundlerConfig,
 }

@@ -6,11 +6,6 @@ injectGlobal`
     display: none;
   }
 
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
   .with-overlay {
     overflow: hidden;
   }

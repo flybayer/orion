@@ -1,8 +1,4 @@
 export const styles = {
-  body: {
-    fontFamily: "'Source Sans Pro', Helvetica, sans-serif",
-    lineHeight: 1.6,
-  },
   container: {
     width: ["100%", "100%", 920],
     padding: ["20px", "0 40px 40px"],
