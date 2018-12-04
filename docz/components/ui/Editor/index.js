@@ -45,14 +45,12 @@ const Wrapper = styled("div")`
   position: relative;
   width: 100%;
   border: 1px solid ${get("colors.border")};
-  border-radius: ${get("radii")};
 `
 
 const Scrollbar = styled(PerfectScrollbar)`
   overflow: auto;
   position: relative;
   max-height: 360px;
-  border-radius: ${get("radii")};
 
   .ps__rail-y {
     z-index: 9;
@@ -66,7 +64,6 @@ const EditorStyled = styled(CodeMirror)`
   ${themes.light()};
   ${p => p.theme.docz.mq(preStyles(p))};
   position: relative;
-  border-radius: ${p => (p.square ? "none" : get("radii"))};
   flex: 1;
 
   .CodeMirror {
@@ -159,7 +156,6 @@ export class Editor extends React.Component {
       className,
       editorClassName,
       language: defaultLanguage,
-      square,
       ...props
     } = this.props
 
@@ -197,7 +193,7 @@ export class Editor extends React.Component {
         <ThemeConfig>
           {config => (
             <Scrollbar option={scrollbarOpts}>
-              <EditorStyled {...editorProps(config)} square={square} />
+              <EditorStyled {...editorProps(config)} />
             </Scrollbar>
           )}
         </ThemeConfig>

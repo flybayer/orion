@@ -1,10 +1,10 @@
-import { styles } from './styles'
-import * as colors from './styles/colors'
+import { styles } from "./styles"
+import * as colors from "./styles/colors"
 
 export const config = {
   colors,
   styles,
-  radii: '4px',
-  mode: 'light',
+  radii: "2px",
+  mode: "light",
   showPlaygroundEditor: true,
 }
