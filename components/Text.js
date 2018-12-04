@@ -39,9 +39,9 @@ let Text = styled.p`
 `
 Text.defaultProps = {
   color: "text",
-  fontSize: 2,
+  fontSize: 3,
   m: 0,
-  maxWidth: "64ch",
+  maxWidth: "72ch",
   lineHeight: 2,
 }
 Text.displayName = "Text"

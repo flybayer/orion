@@ -21,7 +21,4 @@ export default {
   wrapper: "ThemeProvider.js",
   mdPlugins: [emoji],
   modifyBundlerConfig,
-  themeConfig: {
-    showPlaygroundEditor: true,
-  },
 }

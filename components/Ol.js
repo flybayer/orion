@@ -1,13 +1,11 @@
-import system from "system-components"
+import styled from "styled-components"
 import Text from "./Text"
 
-const Ol = system(
-  // 1st arg is default props, rest are styled-component CSS strings or objects
-  {
-    is: Text.withComponent("ol"),
-    pl: 4,
-  }
-)
+let Ol = styled(Text.withComponent("ol"))``
 
+Ol.defaultProps = {
+  ...Text.defaultProps,
+  pl: 4,
+}
 Ol.displayName = "Ol"
 export default Ol

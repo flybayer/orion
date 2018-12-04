@@ -11,6 +11,11 @@ import { mq } from "./styles/responsive"
 import * as components from "./components/ui"
 import * as modes from "./styles/modes"
 
+import Heading from "$components/Heading"
+import Text from "$components/Text"
+import Ul from "$components/Ul"
+import Ol from "$components/Ol"
+
 const mergeTheme = config => old => ({
   ...old,
   docz: Object.assign({}, config.themeConfig, { mq }),
@@ -26,16 +31,16 @@ const Theme = () => (
             notFound: components.NotFound,
             render: components.Render,
             blockquote: components.Blockquote,
-            h1: components.H1,
-            h2: components.H2,
-            h3: components.H3,
-            h4: components.H4,
-            h5: components.H5,
-            h6: components.H6,
+            h1: props => <Heading fontSize={6} mt={5} {...props} />,
+            h2: props => <Heading as="h2" fontSize={5} mt={4} {...props} />,
+            h3: props => <Heading as="h3" fontSize={4} {...props} />,
+            h4: props => <Heading as="h4" fontSize={3} {...props} />,
+            h5: props => <Heading as="h5" fontSize={3} {...props} />,
+            h6: props => <Heading as="h6" fontSize={2} {...props} />,
             hr: components.Hr,
-            ul: components.UnorderedList,
-            ol: components.OrderedList,
-            p: components.Paragraph,
+            ul: Ul,
+            ol: Ol,
+            p: props => <Text {...props} />,
             a: components.Link,
             inlineCode: components.InlineCode,
             loading: components.Loading,
@@ -51,7 +56,7 @@ const Theme = () => (
 
 webfont.load({
   google: {
-    families: ["Source Code Pro", "Source Sans Pro:400,600", "Poppins:400", "Playfair Display:700"],
+    families: ["Source Code Pro", "Source Sans Pro:400,600"],
   },
 })
 

@@ -6,5 +6,5 @@ export const config = {
   styles,
   radii: '4px',
   mode: 'light',
-  showPlaygroundEditor: false,
+  showPlaygroundEditor: true,
 }
