@@ -118,6 +118,11 @@ class SidebarBase extends Component {
   }
 
   componentDidUpdate(pProps, pState) {
+    const { isDesktop } = this.props
+    const { showing } = this.state
+    if (pProps.isDesktop !== isDesktop && !showing && isDesktop) {
+      this.setState({ showing: true })
+    }
     if (pState.showing !== this.state.showing) {
       this.addOverlayClass()
     }
