@@ -6,8 +6,13 @@ import Edit from "react-feather/dist/icons/edit-2"
 import styled from "react-emotion"
 
 import { ButtonLink } from "./Button"
-import { GithubLink, Sidebar, Main } from "../shared"
+import { GithubLink, Sidebar } from "../shared"
 import { get } from "../../utils/theme"
+
+const PageWrapper = styled("div")`
+  display: flex;
+  max-width: 100vw;
+`
 
 const Wrapper = styled("div")`
   flex: 1;
@@ -70,12 +75,12 @@ export const Page = ({ children, doc: { link, fullpage, edit = true } }) => {
 
   return (
     <ThemeConfig>
-      {({ repository, ...config }) => (
-        <Main config={config}>
+      {({ repository }) => (
+        <PageWrapper>
           {repository && <GithubLink repository={repository} />}
           {!fullpage && <Sidebar />}
           <Wrapper>{fullpage ? content : <Container>{content}</Container>}</Wrapper>
-        </Main>
+        </PageWrapper>
       )}
     </ThemeConfig>
   )

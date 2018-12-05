@@ -3,13 +3,18 @@ route: /
 order: 1
 ---
 
-import Heading from "../components/Heading"
+import Heading from "$components/Heading"
+import Box from "$components/Box"
 
 # :milky_way: Orion
 
-## Zero Dependency UI Library for React
+<Heading as="h2" fontSize={5} mt={3} mb={2}>
+  Zero Dependency UI Library for React
+</Heading>
 
-### Everything you need for the modern web including a design system starter kit
+<Heading as="h3" fontSize={4} fontWeight={400} mb={4}>
+  Everything you need for the modern web including a design system starter kit
+</Heading>
 
 - :white_check_mark: Componentized Styles with CSS-in-JS
 - :white_check_mark: Utility-First Style Props
@@ -17,6 +22,8 @@ import Heading from "../components/Heading"
 - :white_check_mark: Consistent But Flexible Design System
 - :white_check_mark: Defaults Designed For The 80% Use-case
 - :white_check_mark: Truly Accessible
+
+<Box mb={4}> </Box>
 
 Most component libraries have a significant limitation — **what happens when you need to override some styles or behavior?**
 

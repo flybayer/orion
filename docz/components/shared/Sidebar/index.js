@@ -74,26 +74,6 @@ const Empty = styled("div")`
   color: ${sidebarText};
 `
 
-const Footer = styled("div")`
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  color: ${sidebarText};
-  border-top: 1px dashed ${sidebarBorder};
-`
-
-const FooterLink = styled("a")`
-  padding: 0;
-  margin: 0;
-  margin-left: 5px;
-`
-
-const FooterLogo = styled(Docz)`
-  fill: ${sidebarText};
-`
-
 const ToggleBackground = styled("div")`
   content: "";
   display: ${p => (p.opened ? "none" : "block")};
@@ -162,12 +142,6 @@ class SidebarBase extends Component {
                       ))}
                     </Menus>
                   )}
-                  <Footer>
-                    Built with
-                    <FooterLink href="https://docz.site" target="_blank">
-                      <FooterLogo width={40} />
-                    </FooterLink>
-                  </Footer>
                 </Content>
               </Wrapper>
               <ToggleBackground opened={showing} onClick={this.handleSidebarToggle} />

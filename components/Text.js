@@ -40,7 +40,8 @@ let Text = styled.p`
 Text.defaultProps = {
   color: "text",
   fontSize: 3,
-  m: 0,
+  mt: 0,
+  mb: 0,
   maxWidth: "40em",
   lineHeight: 2,
 }

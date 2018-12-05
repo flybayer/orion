@@ -175,7 +175,7 @@ const breakpoints = ["32rem", "48rem", "64rem", "80rem"]
 
 const space = [0, "0.25rem", "0.5rem", "1rem", "2rem", "4rem", "8rem", "16rem", "32rem", "64rem"]
 
-const fontSizes = [12, 14, 16, 18, 25, 35, 49, 69, 97, 136]
+const fontSizes = [12, 14, 16, 18, 25, 34, 49, 69, 97, 136]
 
 const fontWeights = {
   normal: 400,

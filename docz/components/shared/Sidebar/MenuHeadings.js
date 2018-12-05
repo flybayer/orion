@@ -5,14 +5,10 @@ import get from "lodash.get"
 
 import { get as themeGet } from "../../../utils/theme"
 
+import Box from "$components/Box"
+
 const sidebarPrimary = themeGet("colors.sidebarPrimary")
 const primaryColor = themeGet("colors.primary")
-
-const Submenu = styled("div")`
-  display: flex;
-  flex-direction: column;
-  margin: 5px 0 0 24px;
-`
 
 const SmallLink = styled(Link)`
   position: relative;
@@ -67,7 +63,7 @@ export const MenuHeadings = ({ route, onClick }) => (
 
       return (
         headings.length > 0 && (
-          <Submenu>
+          <Box flexDirection="column" mt="5px" ml="24px">
             {headings.map(heading => (
               <SmallLink
                 key={heading.slug}
@@ -78,7 +74,7 @@ export const MenuHeadings = ({ route, onClick }) => (
                 {heading.value}
               </SmallLink>
             ))}
-          </Submenu>
+          </Box>
         )
       )
     }}

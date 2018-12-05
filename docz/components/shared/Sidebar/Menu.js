@@ -7,10 +7,7 @@ import styled from "react-emotion"
 import { MenuLink, getActiveFromClass } from "./MenuLink"
 import { get } from "../../../utils/theme"
 
-const Wrapper = styled("div")`
-  display: flex;
-  flex-direction: column;
-`
+import Box from "$components/Box"
 
 const List = styled("dl")`
   flex: 1;
@@ -62,7 +59,7 @@ export class Menu extends Component {
     }
 
     return (
-      <Wrapper>
+      <Box flexDirection="column">
         <MenuLink item={item} {...hasToggle && { onClick: handleToggle }}>
           {item.name}
           {hasChildren && (
@@ -89,7 +86,7 @@ export class Menu extends Component {
               ))}
           </List>
         )}
-      </Wrapper>
+      </Box>
     )
   }
 
