@@ -15,6 +15,7 @@ import {
   flex,
   flexDirection,
   flexWrap,
+  order,
   alignItems,
   alignSelf,
   justifyContent,
@@ -41,6 +42,7 @@ let Box = styled.div`
   ${flex}
   ${flexDirection}
   ${flexWrap}
+  ${order}
   ${alignItems}
   ${alignSelf}
   ${justifyContent}

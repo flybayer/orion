@@ -20,4 +20,13 @@ export default {
   theme: "docz/theme.js",
   mdPlugins: [emoji],
   modifyBundlerConfig,
+  menu: [
+    "Home",
+    "Installation",
+    "Box",
+    "Grid",
+    { name: "Buttons", menu: ["Button", "ButtonBase", "MinimalButton", "OutlineButton"] },
+    "Text",
+    "Heading",
+  ],
 }

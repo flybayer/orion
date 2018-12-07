@@ -1,27 +1,65 @@
-import system from 'system-components'
-
-import {style} from 'styled-system'
-const justifyItems = style({
-  prop: 'justifyItems'
-})
-
-const Grid = system(
-  {display: 'grid'},
-  'space',
-  'color',
-  'width',
-  'minWidth',
-  'maxWidth',
-  'gridGap',
-  'gridRowGap',
-  'gridColumnGap',
-  'gridTemplateRows',
-  'gridTemplateColumns',
-  // 'gridTemplateAreas',
+import styled from "styled-components"
+import {
+  space,
+  color,
+  position,
+  display,
+  width,
+  height,
+  minWidth,
+  maxWidth,
+  minHeight,
+  maxHeight,
+  borders,
+  borderRadius,
+  gridTemplateRows,
+  gridTemplateColumns,
+  gridTemplateAreas,
+  gridAutoFlow,
+  gridAutoRows,
+  gridAutoColumns,
+  gridGap,
+  gridRowGap,
+  gridColumnGap,
+  gridColumn,
+  gridRow,
+  gridArea,
+  alignItems,
+  alignContent,
+  justifyContent,
   justifyItems,
-  'alignItems',
-  'overflow',
-)
+  overflow,
+} from "styled-system"
 
-Grid.displayName = 'Grid'
+let Grid = styled.div`
+  ${space}
+  ${color}
+  ${position}
+  ${display}
+  ${width}
+  ${height}
+  ${minWidth}
+  ${maxWidth}
+  ${minHeight}
+  ${maxHeight}
+  ${borders}
+  ${borderRadius}
+  ${gridTemplateRows}
+  ${gridTemplateColumns}
+  ${gridTemplateAreas}
+  ${gridAutoFlow}
+  ${gridAutoRows}
+  ${gridAutoColumns}
+  ${gridGap}
+  ${gridRowGap}
+  ${gridColumnGap}
+  ${alignItems}
+  ${alignContent}
+  ${justifyContent}
+  ${justifyItems}
+  ${overflow}
+`
+
+Grid.defaultProps = { display: "grid" }
+Grid.displayName = "Grid"
 export default Grid

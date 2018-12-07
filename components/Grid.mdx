@@ -1,0 +1,25 @@
+---
+route: /grid
+---
+
+import { Playground } from "docz"
+import Grid from "./Grid"
+import Box from "./Box"
+import Source from "./tmp-source/Grid.md"
+
+# Grid
+
+Grid is your general purpose `display: grid` `div`.
+
+## Examples
+
+<Playground>
+  <Grid gridTemplateColumns={["1fr", "1fr 1fr"]} border={1}>
+    <Box bg="pink.2">1</Box>
+    <Box bg="lime.2">2</Box>
+  </Grid>
+</Playground>
+
+## Source Code
+
+<Source />
