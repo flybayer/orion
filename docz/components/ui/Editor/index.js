@@ -50,7 +50,6 @@ const Wrapper = styled("div")`
 const Scrollbar = styled(PerfectScrollbar)`
   overflow: auto;
   position: relative;
-  max-height: 360px;
 
   .ps__rail-y {
     z-index: 9;
