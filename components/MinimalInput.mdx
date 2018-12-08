@@ -6,6 +6,7 @@ route: /minimal-input
 
 import { Playground } from "docz"
 import MinimalInput from "./MinimalInput"
+import Box from "./Box"
 import Source from "./tmp-source/MinimalInput.md"
 
 # MinimalInput
@@ -16,6 +17,9 @@ For when you need a button, but you don't want it to be a bulky button. You want
 
 <Playground>
   <MinimalInput placeholder="Favorite person" />
+  <Box bg="blue.3" p={3} mt={3}>
+    <MinimalInput placeholder="Works with colored background" />
+  </Box>
 </Playground>
 
 ## Source Code

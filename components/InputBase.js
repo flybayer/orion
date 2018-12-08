@@ -19,6 +19,9 @@ import {
 } from "styled-system"
 
 let InputBase = styled.input`
+  // This is before the style functions so style functions can override it
+  border: 0;
+
   ${space}
   ${color}
   ${fontSize}
@@ -35,8 +38,6 @@ let InputBase = styled.input`
   ${gridColumn}
   ${gridRow}
   ${gridArea}
-
-  border: 0;
 
   &::placeholder {
     color: inherit;
