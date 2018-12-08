@@ -8,7 +8,7 @@ let Heading = styled.h1`
 Heading.defaultProps = {
   color: "heading",
   fontSize: 5,
-  fontWeight: 700,
+  fontWeight: 400,
   mt: 0,
   mb: 3,
 }

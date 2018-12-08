@@ -6,11 +6,13 @@ let Text = styled.p`
   ${commonStyleProps}
   ${commonTypographyProps}
 
-	& + &,
-	& + ol,
-	& + ul,
-	ol + &,
-	ul + & {
+  hyphens: auto;
+
+  & + &,
+  & + ol,
+  & + ul,
+  ol + &,
+  ul + & {
     margin-top: ${themeGet("space.3")};
   }
 `
