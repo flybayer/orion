@@ -1,73 +1,89 @@
-import system from "system-components"
-import { css } from "styled-components"
+import styled from "styled-components"
+import {
+  space,
+  color,
+  fontSize,
+  fontFamily,
+  width,
+  minWidth,
+  maxWidth,
+  borders,
+  borderRadius,
+  flex,
+  order,
+  alignSelf,
+  justifySelf,
+  gridColumn,
+  gridRow,
+  gridArea,
+} from "styled-system"
 
-const InputBase = system(
-  {
-    is: "input",
-    color: "text",
-    bg: "transparent",
-    fontSize: 2,
-    fontFamily: "inherit",
-    m: 0,
-    width: "100%",
-  },
-  "color",
-  "space",
-  "fontSize",
-  "fontWeight",
-  "borderRadius",
-  "width",
-  "minWidth",
-  "maxWidth",
-  "flex",
-  "justifySelf",
-  "alignSelf",
-  "order",
-  "gridArea",
-  "gridColumn",
-  "gridRow",
-  props => css`
-    bug-fix: first line doesnt work;
-    border: 0;
+let InputBase = styled.input`
+  ${space}
+  ${color}
+  ${fontSize}
+  ${fontFamily}
+  ${width}
+  ${minWidth}
+  ${maxWidth}
+  ${borders}
+  ${borderRadius}
+  ${flex}
+  ${order}
+  ${alignSelf}
+  ${justifySelf}
+  ${gridColumn}
+  ${gridRow}
+  ${gridArea}
+
+  border: 0;
+
+  &::placeholder {
+    color: inherit;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: none;
 
     &::placeholder {
-      color: inherit;
-      opacity: 0.5;
+      opacity: 0.4;
     }
+  }
 
-    &:focus {
-      outline: none;
+  &:disabled {
+    color: inherit;
+    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
 
-      &::placeholder {
-        opacity: 0.4;
-      }
-    }
+  // ------------------
+  // Normalizing styles
+  // ------------------
+  appearance: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  &[type="search"],
+  &[type="search"]::-webkit-search-decoration,
+  &[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
 
-    &:disabled {
-      color: inherit;
-      opacity: 0.7;
-      background-color: rgba(0, 0, 0, 0.05);
-    }
+  // Correct the cursor style of increment and decrement buttons in Chrome.
+  // &[type="number"]::-webkit-inner-spin-button,
+  // &[type="number"]::-webkit-outer-spin-button {
+  //   height: auto;
+  // }
+`
 
-    // ------------------
-    // Normalizing styles
-    // ------------------
-    appearance: none;
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    &[type="search"],
-    &[type="search"]::-webkit-search-decoration,
-    &[type="search"]::-webkit-search-cancel-button {
-      -webkit-appearance: none;
-    }
-
-    // Correct the cursor style of increment and decrement buttons in Chrome.
-    // &[type="number"]::-webkit-inner-spin-button,
-    // &[type="number"]::-webkit-outer-spin-button {
-    //   height: auto;
-    // }
-  `
-)
-
+InputBase.defaultProps = {
+  color: "text",
+  bg: "transparent",
+  fontSize: 3,
+  fontFamily: "inherit",
+  mt: 0,
+  mb: 0,
+  width: "100%",
+}
 InputBase.displayName = "InputBase"
 export default InputBase

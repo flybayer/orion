@@ -10,8 +10,15 @@ import {
   textAlign,
   lineHeight,
   letterSpacing,
+  width,
   minWidth,
   maxWidth,
+  flex,
+  alignSelf,
+  justifySelf,
+  gridColumn,
+  gridRow,
+  gridArea,
   themeGet,
 } from "styled-system"
 
@@ -26,8 +33,15 @@ let Text = styled.p`
   ${textAlign}
   ${lineHeight}
   ${letterSpacing}
+  ${width}
   ${minWidth}
   ${maxWidth}
+  ${flex}
+  ${alignSelf}
+  ${justifySelf}
+  ${gridColumn}
+  ${gridRow}
+  ${gridArea}
 
 	& + &,
 	& + ol,
@@ -43,7 +57,7 @@ Text.defaultProps = {
   mt: 0,
   mb: 0,
   maxWidth: "40em",
-  lineHeight: 2,
+  lineHeight: 1.5,
 }
 Text.displayName = "Text"
 export default Text

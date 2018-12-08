@@ -4,6 +4,7 @@ route: /heading
 
 import { Playground } from "docz"
 import Heading from "./Heading"
+import Text from "./Text"
 import Source from "./tmp-source/Heading.md"
 
 # Heading
@@ -15,21 +16,26 @@ Heading is your general purpose `<h_>` tag
 <Playground>
   <Heading>Title</Heading>
   <Heading as="h2" fontSize={4} fontWeight={400}>
-    Sub-Title
+    Sub Title
   </Heading>
   <Heading as="h3" fontSize={3} fontWeight={600}>
-    Sub-Sub-Title
+    Sub Sub Title
   </Heading>
+  <Text>
+    It was a lovely day to explore a new component library. I asked around, and my friends
+    recommended Orion. They said it's better than Tesla!
+  </Text>
 </Playground>
 
 <Playground>
-  <Heading fontSize={9}>9. Heading</Heading>
-  <Heading fontSize={8}>8. Heading</Heading>
-  <Heading fontSize={7}>7. Heading Component</Heading>
-  <Heading fontSize={6}>6. Heading Component</Heading>
-  <Heading>5. Heading Component</Heading>
-  <Heading fontSize={4}>4. Heading Component</Heading>
-  <Heading fontSize={3}>3. Heading Component</Heading>
+  <Heading fontSize={8}>Orion</Heading>
+  <Heading fontSize={7}>Component Library</Heading>
+  <Heading fontSize={6}>Heading Component Library</Heading>
+  <Heading>Zero Dependency UI Library for React</Heading>
+  <Heading fontSize={4}>There's a New Kid on the Block!</Heading>
+  <Heading fontSize={3}>
+    Everything you need for the modern web including a design system starter kit
+  </Heading>
 </Playground>
 
 ## Source Code

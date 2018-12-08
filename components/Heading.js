@@ -31,10 +31,9 @@ let Heading = styled.h1`
 Heading.defaultProps = {
   color: "heading",
   fontSize: 5,
-  fontWeight: "bold",
+  fontWeight: 700,
   mt: 0,
   mb: 3,
-  lineHeight: 2,
 }
 Heading.displayName = "Heading"
 export default Heading

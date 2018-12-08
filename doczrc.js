@@ -25,8 +25,12 @@ export default {
     "Installation",
     "Box",
     "Grid",
-    { name: "Buttons", menu: ["Button", "ButtonBase", "MinimalButton", "OutlineButton"] },
     "Text",
     "Heading",
+    "Ul",
+    "Ol",
+    { name: "Buttons", menu: ["Button", "MinimalButton", "OutlineButton", "ButtonBase"] },
+    { name: "Inputs", menu: ["Input", "LabeledInput", "MinimalInput", "InputBase"] },
+    "Label",
   ],
 }

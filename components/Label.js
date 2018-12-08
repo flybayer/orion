@@ -1,39 +1,32 @@
-import system from "system-components"
+import styled from "styled-components"
+import {
+  space,
+  color,
+  display,
+  fontFamily,
+  fontSize,
+  fontWeight,
+  fontStyle,
+  letterSpacing,
+  flexDirection,
+  flexWrap,
+  alignItems,
+  justifyContent,
+} from "styled-system"
+import Text from "./Text"
 
-const Label = system(
-  // 1st arg is default props, rest are styled-component CSS strings or objects
-  {
-    is: "label",
-    color: "label",
-    fontSize: 2,
-    display: "flex",
-  },
-  "space",
-  "color",
-  "position",
-  "display",
-  "width",
-  "height",
-  "fontFamily",
-  "fontSize",
-  "fontWeight",
-  // "fontStyle",
-  "textAlign",
-  "lineHeight",
-  "letterSpacing",
-  "minWidth",
-  "maxWidth",
-  "flex",
-  "flexDirection",
-  "flexWrap",
-  "alignItems",
-  "alignSelf",
-  "justifyContent",
-  "justifySelf",
-  "gridColumn",
-  "gridRow",
-  "gridArea"
-)
+let Label = styled(Text.withComponent("label"))`
+  ${display}
+  ${flexDirection}
+  ${flexWrap}
+  ${alignItems}
+  ${justifyContent}
+`
 
+Label.defaultProps = {
+  ...Text.defaultProps,
+  color: "label",
+  display: "flex",
+}
 Label.displayName = "Label"
 export default Label
