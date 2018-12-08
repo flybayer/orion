@@ -1,43 +1,16 @@
 import styled from "styled-components"
-import {
-  space,
-  color,
-  fontSize,
-  fontFamily,
-  width,
-  minWidth,
-  maxWidth,
-  borders,
-  borderRadius,
-  flex,
-  order,
-  alignSelf,
-  justifySelf,
-  gridColumn,
-  gridRow,
-  gridArea,
-} from "styled-system"
+import { fontSize, fontFamily, borders, borderRadius } from "styled-system"
+import { commonStyleProps } from "./theme"
 
 let InputBase = styled.input`
   // This is before the style functions so style functions can override it
   border: 0;
 
-  ${space}
-  ${color}
+  ${commonStyleProps}
   ${fontSize}
   ${fontFamily}
-  ${width}
-  ${minWidth}
-  ${maxWidth}
   ${borders}
   ${borderRadius}
-  ${flex}
-  ${order}
-  ${alignSelf}
-  ${justifySelf}
-  ${gridColumn}
-  ${gridRow}
-  ${gridArea}
 
   &::placeholder {
     color: inherit;

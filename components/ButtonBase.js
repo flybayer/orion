@@ -1,46 +1,24 @@
 import styled from "styled-components"
 import {
-  color,
-  space,
   fontSize,
   fontWeight,
   borders,
   borderRadius,
   borderColor,
-  width,
-  minWidth,
-  maxWidth,
-  flex,
   alignItems,
   justifyContent,
-  justifySelf,
-  alignSelf,
-  order,
-  gridArea,
-  gridColumn,
-  gridRow,
 } from "styled-system"
+import { commonStyleProps } from "./theme"
 
 let ButtonBase = styled.button`
-  ${color}
-  ${space}
+  ${commonStyleProps}
   ${fontSize}
   ${fontWeight}
   ${borders}
   ${borderRadius}
   ${borderColor}
-  ${width}
-  ${minWidth}
-  ${maxWidth}
-  ${flex}
   ${alignItems}
   ${justifyContent}
-  ${justifySelf}
-  ${alignSelf}
-  ${order}
-  ${gridArea}
-  ${gridColumn}
-  ${gridRow}
 
   text-overflow: ellipsis;
 

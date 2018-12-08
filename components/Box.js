@@ -1,55 +1,29 @@
 import styled from "styled-components"
 import {
-  space,
-  color,
   position,
-  display,
-  width,
-  height,
-  minWidth,
-  maxWidth,
   minHeight,
   maxHeight,
   borders,
   borderRadius,
-  flex,
   flexDirection,
   flexWrap,
-  order,
   alignItems,
-  alignSelf,
   justifyContent,
-  justifySelf,
-  gridColumn,
-  gridRow,
-  gridArea,
   overflow,
 } from "styled-system"
+import { commonStyleProps } from "./theme"
 
 let Box = styled.div`
-  ${space}
-  ${color}
+  ${commonStyleProps}
   ${position}
-  ${display}
-  ${width}
-  ${height}
-  ${minWidth}
-  ${maxWidth}
   ${minHeight}
   ${maxHeight}
   ${borders}
   ${borderRadius}
-  ${flex}
   ${flexDirection}
   ${flexWrap}
-  ${order}
   ${alignItems}
-  ${alignSelf}
   ${justifyContent}
-  ${justifySelf}
-  ${gridColumn}
-  ${gridRow}
-  ${gridArea}
   ${overflow}
 `
 

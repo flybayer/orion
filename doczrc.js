@@ -32,5 +32,6 @@ export default {
     { name: "Buttons", menu: ["Button", "MinimalButton", "OutlineButton", "ButtonBase"] },
     { name: "Inputs", menu: ["Input", "LabeledInput", "MinimalInput", "InputBase"] },
     "Label",
+    "Textarea",
   ],
 }

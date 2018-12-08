@@ -1,32 +1,9 @@
 import styled from "styled-components"
-import {
-  space,
-  color,
-  position,
-  fontFamily,
-  fontSize,
-  fontWeight,
-  fontStyle,
-  textAlign,
-  lineHeight,
-  letterSpacing,
-  minWidth,
-  maxWidth,
-} from "styled-system"
+import { commonStyleProps, commonTypographyProps } from "./theme"
 
 let Heading = styled.h1`
-  ${space}
-  ${color}
-  ${position}
-  ${fontFamily}
-  ${fontSize}
-  ${fontWeight}
-  ${fontStyle}
-  ${textAlign}
-  ${lineHeight}
-  ${letterSpacing}
-  ${minWidth}
-  ${maxWidth}
+  ${commonStyleProps}
+  ${commonTypographyProps}
 `
 Heading.defaultProps = {
   color: "heading",

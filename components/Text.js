@@ -1,55 +1,18 @@
 import styled from "styled-components"
-import {
-  space,
-  color,
-  position,
-  fontFamily,
-  fontSize,
-  fontWeight,
-  fontStyle,
-  textAlign,
-  lineHeight,
-  letterSpacing,
-  width,
-  minWidth,
-  maxWidth,
-  flex,
-  alignSelf,
-  justifySelf,
-  gridColumn,
-  gridRow,
-  gridArea,
-  themeGet,
-} from "styled-system"
+import { themeGet } from "styled-system"
+import { commonStyleProps, commonTypographyProps } from "./theme"
 
 let Text = styled.p`
-  ${space}
-  ${color}
-  ${position}
-  ${fontFamily}
-  ${fontSize}
-  ${fontWeight}
-  ${fontStyle}
-  ${textAlign}
-  ${lineHeight}
-  ${letterSpacing}
-  ${width}
-  ${minWidth}
-  ${maxWidth}
-  ${flex}
-  ${alignSelf}
-  ${justifySelf}
-  ${gridColumn}
-  ${gridRow}
-  ${gridArea}
+  ${commonStyleProps}
+  ${commonTypographyProps}
 
 	& + &,
 	& + ol,
 	& + ul,
 	ol + &,
 	ul + & {
-		margin-top: ${themeGet("space.3")};
-	}
+    margin-top: ${themeGet("space.3")};
+  }
 `
 Text.defaultProps = {
   color: "text",

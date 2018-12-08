@@ -234,3 +234,54 @@ const theme = {
   shadows,
 }
 export default theme
+
+import {
+  space as spaceFn,
+  color,
+  display,
+  width,
+  height,
+  minWidth,
+  maxWidth,
+  flex,
+  order,
+  alignSelf,
+  justifySelf,
+  gridColumn,
+  gridRow,
+  gridArea,
+  fontFamily,
+  fontSize,
+  fontWeight,
+  fontStyle,
+  textAlign,
+  lineHeight,
+  letterSpacing,
+  compose,
+} from "styled-system"
+
+export const commonStyleProps = compose(
+  spaceFn,
+  color,
+  display,
+  width,
+  height,
+  minWidth,
+  maxWidth,
+  flex,
+  order,
+  alignSelf,
+  justifySelf,
+  gridColumn,
+  gridRow,
+  gridArea
+)
+export const commonTypographyProps = compose(
+  fontFamily,
+  fontSize,
+  fontWeight,
+  fontStyle,
+  textAlign,
+  lineHeight,
+  letterSpacing
+)
