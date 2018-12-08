@@ -1,19 +1,15 @@
-import system from "system-components"
+import styled from "styled-components"
+import { commonStyleProps } from "./theme"
 
-const Radio = system(
-  {
-    is: "input",
-    type: "radio",
-    m: 0,
-    mr: 1,
-    alignSelf: "center",
-  },
-  "space",
-  "color",
-  "flex",
-  "alignSelf",
-  "justifySelf"
-)
+let Radio = styled.input`
+  ${commonStyleProps}
+`
 
+Radio.defaultProps = {
+  type: "radio",
+  m: 0,
+  mr: 1,
+  alignSelf: "center",
+}
 Radio.displayName = "Radio"
 export default Radio

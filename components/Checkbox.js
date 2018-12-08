@@ -1,19 +1,15 @@
-import system from "system-components"
+import styled from "styled-components"
+import { commonStyleProps } from "./theme"
 
-const Checkbox = system(
-  {
-    is: "input",
-    type: "checkbox",
-    m: 0,
-    mr: 1,
-    alignSelf: "center",
-  },
-  "space",
-  "color",
-  "flex",
-  "alignSelf",
-  "justifySelf"
-)
+let Checkbox = styled.input`
+  ${commonStyleProps}
+`
 
+Checkbox.defaultProps = {
+  type: "checkbox",
+  m: 0,
+  mr: 1,
+  alignSelf: "center",
+}
 Checkbox.displayName = "Checkbox"
 export default Checkbox

@@ -33,5 +33,7 @@ export default {
     { name: "Inputs", menu: ["Input", "LabeledInput", "MinimalInput", "InputBase"] },
     "Label",
     "Textarea",
+    { name: "Radios", menu: ["Radio", "LabeledRadio"] },
+    { name: "Checkboxes", menu: ["Checkbox", "LabeledCheckbox"] },
   ],
 }
