@@ -21,8 +21,8 @@ Text.defaultProps = {
   fontSize: 3,
   mt: 0,
   mb: 0,
-  maxWidth: "40em",
-  lineHeight: 1.5,
+  maxWidth: "35em",
+  lineHeight: "normal",
 }
 Text.displayName = "Text"
 export default Text

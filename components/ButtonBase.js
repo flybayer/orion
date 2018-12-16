@@ -7,6 +7,7 @@ import {
   borderColor,
   alignItems,
   justifyContent,
+  boxShadow,
 } from "styled-system"
 import { commonStyleProps } from "./theme"
 
@@ -19,6 +20,7 @@ let ButtonBase = styled.button`
   ${borderColor}
   ${alignItems}
   ${justifyContent}
+  ${boxShadow}
 
   text-overflow: ellipsis;
 
@@ -60,7 +62,7 @@ ButtonBase.defaultProps = {
   fontWeight: "bold",
   fontFamily: "inherit",
   border: 0,
-  borderRadius: 2,
+  borderRadius: "element",
   onClick: () => alert("TODO"),
   onTouchStart: () => {}, // Enable &:active for iOS Safari
 }

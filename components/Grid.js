@@ -18,6 +18,7 @@ import {
   alignContent,
   justifyContent,
   justifyItems,
+  boxShadow,
   overflow,
 } from "styled-system"
 import { commonStyleProps } from "./theme"
@@ -42,6 +43,7 @@ let Grid = styled.div`
   ${alignContent}
   ${justifyContent}
   ${justifyItems}
+  ${boxShadow}
   ${overflow}
 `
 

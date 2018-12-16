@@ -9,6 +9,7 @@ import {
   flexWrap,
   alignItems,
   justifyContent,
+  boxShadow,
   overflow,
 } from "styled-system"
 import { commonStyleProps } from "./theme"
@@ -24,6 +25,7 @@ let Box = styled.div`
   ${flexWrap}
   ${alignItems}
   ${justifyContent}
+  ${boxShadow}
   ${overflow}
 `
 

@@ -171,7 +171,7 @@ const colors = {
   elementFocus: baseColors.black,
 }
 
-const breakpoints = ["32rem", "48rem", "64rem", "80rem"]
+const breakpoints = ["576px", "768px", "992px", "1200px"]
 
 const space = [
   0,
@@ -206,26 +206,44 @@ const fontSizes = [
   "4.5rem",
 ]
 
-const fontWeights = {
-  normal: 400,
-  bold: 700,
-}
-
-const radii = [0, 3, 5, 8]
-
 const fonts = {
-  // 0: 'system-ui, sans-serif',
   sans:
-    '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-  mono: '"SF Mono", "Roboto Mono", Menlo, monospace',
+    "system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol",
+  serif:
+    "Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol",
+  mono: "SF Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
 }
 
-// const lineHeights = [1.15, 1.25, 1.5]
+const lineHeights = {
+  none: 1,
+  tight: 1.25,
+  normal: 1.5,
+  loose: 2,
+}
+const letterSpacings = {
+  tight: "-0.05em",
+  normal: 0,
+  loose: "0.05em",
+}
+
+const radii = {
+  0: 0,
+  1: "0.125rem",
+  2: "0.25rem",
+  3: "0.5rem",
+  full: "9999px",
+}
+radii.element = radii[2]
+
+const borders = [0, "1px solid", "2px solid", "4px solid", "8px solid"]
 
 const shadows = [
   "none",
-  `inset 0 0 0 1px ${colors.gray}`,
-  `inset 0 0 0 1px ${colors.gray}, 0 0 4px ${colors.gray}`,
+  "0 1px 3px hsla(0, 0%, 0%, 0.12), 0 1px 2px hsla(0, 0%, 0%, 0.24)",
+  "0 3px 6px hsla(0, 0%, 0%, 0.15), 0 2px 4px hsla(0, 0%, 0%, 0.12)",
+  "0 10px 20px hsla(0, 0%, 0%, 0.15), 0 3px 6px hsla(0, 0%, 0%, 0.10)",
+  "0 15px 25px hsla(0, 0%, 0%, 0.15), 0 5px 10px hsla(0, 0%, 0%, 0.05)",
+  "0 20px 40px hsla(0, 0%, 0%, 0.2)",
 ]
 
 // -----------------
@@ -256,14 +274,16 @@ export const GlobalStyles = createGlobalStyle`
 `
 
 const theme = {
+  colors,
   breakpoints,
   space,
   fontSizes,
-  fontWeights,
   fonts,
-  colors,
+  lineHeights,
+  letterSpacings,
   radii,
   shadows,
+  borders,
 }
 export default theme
 

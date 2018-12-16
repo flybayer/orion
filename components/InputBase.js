@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { fontSize, fontFamily, borders, borderRadius } from "styled-system"
+import { fontSize, fontFamily, borders, borderRadius, boxShadow } from "styled-system"
 import { commonStyleProps } from "./theme"
 
 let InputBase = styled.input`
@@ -11,6 +11,7 @@ let InputBase = styled.input`
   ${fontFamily}
   ${borders}
   ${borderRadius}
+  ${boxShadow}
 
   &::placeholder {
     color: inherit;

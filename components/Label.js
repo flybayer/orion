@@ -17,8 +17,7 @@ Label.defaultProps = {
   display: "flex",
   mt: 0,
   mb: 0,
-  maxWidth: "40em",
-  lineHeight: 1.5,
+  lineHeight: "normal",
 }
 Label.displayName = "Label"
 export default Label

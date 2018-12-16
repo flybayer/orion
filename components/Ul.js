@@ -7,7 +7,7 @@ let Ul = styled(Text.withComponent("ul"))`
 
 Ul.defaultProps = {
   ...Text.defaultProps,
-  pl: 4,
+  pl: 5,
 }
 Ul.displayName = "Ul"
 export default Ul

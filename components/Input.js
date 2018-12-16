@@ -13,7 +13,7 @@ let Input = styled(InputBase)`
 Input.defaultProps = {
   ...InputBase.defaultProps,
   p: 2,
-  borderRadius: 2,
+  borderRadius: "element",
 }
 Input.displayName = "Input"
 export default Input
