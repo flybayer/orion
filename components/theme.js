@@ -173,9 +173,38 @@ const colors = {
 
 const breakpoints = ["32rem", "48rem", "64rem", "80rem"]
 
-const space = [0, "0.25rem", "0.5rem", "1rem", "2rem", "4rem", "8rem", "16rem", "32rem", "64rem"]
+const space = [
+  0,
+  "0.25rem",
+  "0.5rem",
+  "0.75rem",
+  "1rem",
+  "1.5rem",
+  "2rem",
+  "3rem",
+  "4rem",
+  "6rem",
+  "8rem",
+  "12rem",
+  "16rem",
+  "24rem",
+  "32rem",
+  "40rem",
+  "48rem",
+]
 
-const fontSizes = [12, 14, 16, 18, 24, 32, 44, 66, 88]
+const fontSizes = [
+  "0.75rem",
+  "0.875rem",
+  "1rem",
+  "1.25rem",
+  "1.5rem",
+  "1.875rem",
+  "2.25rem",
+  "3rem",
+  "3.75rem",
+  "4.5rem",
+]
 
 const fontWeights = {
   normal: 400,
