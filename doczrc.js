@@ -15,7 +15,7 @@ const modifyBundlerConfig = config => {
 }
 
 export default {
-  title: "🌃 Orion",
+  title: "✈️ Camber",
   repository: "https://github.com/flybayer/orion",
   theme: "docz/theme.js",
   mdPlugins: [emoji],

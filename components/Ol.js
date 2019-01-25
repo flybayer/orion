@@ -5,7 +5,7 @@ let Ol = styled(Text.withComponent("ol"))``
 
 Ol.defaultProps = {
   ...Text.defaultProps,
-  pl: 4,
+  pl: 5,
 }
 Ol.displayName = "Ol"
 export default Ol

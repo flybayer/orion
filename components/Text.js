@@ -6,8 +6,6 @@ let Text = styled.p`
   ${commonStyleProps}
   ${commonTypographyProps}
 
-  hyphens: auto;
-
   & + &,
   & + ol,
   & + ul,
@@ -18,7 +16,7 @@ let Text = styled.p`
 `
 Text.defaultProps = {
   color: "text",
-  fontSize: 3,
+  fontSize: 2,
   mt: 0,
   mb: 0,
   maxWidth: "35em",

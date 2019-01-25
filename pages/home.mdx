@@ -5,7 +5,7 @@ route: /
 import Heading from "$components/Heading"
 import Box from "$components/Box"
 
-# :milky_way: Orion
+# :airplane: Camber
 
 <Heading as="h2" fontSize={5} mt={3} mb={4}>
   Zero Dependency UI Library for React
@@ -15,30 +15,30 @@ import Box from "$components/Box"
   Everything you need for the modern web including a design system starter kit
 </Heading>
 
-- :white_check_mark: Componentized Styles with CSS-in-JS
-- :white_check_mark: Utility-First Style Props
-- :white_check_mark: Amazing Cross-Platform UX
-- :white_check_mark: Consistent But Flexible Design System
-- :white_check_mark: Defaults Designed For The 80% Use-case
-- :white_check_mark: Truly Accessible
+- Componentized Styles with CSS-in-JS
+- Utility-First Style Props
+- Amazing Cross-Platform UX
+- Consistent But Flexible Design System
+- Defaults Designed For The 80% Use-case
+- Truly Accessible
 
 <Box mb={4}> </Box>
 
-Most component libraries have a significant limitation — **what happens when you need to override some styles or behavior?**
+Most component libraries have a significant limitation — _what happens when you need to override some styles or behavior?_
 
 Most likely you go into a dark room and engage in some hacky CSS overrides or node_modules monkey-patching. Woo hoo! It works. Well, at least until the next library update. Then you have to fix it all over again :disappointed:
 
-Orion takes a different approach. Read on to see how. :arrow_down:
+Camber takes a different approach. Read on to see how. :arrow_down:
 
 ## Zero Dependency
 
-Instead of installing from npm, you install the source code of Orion components directly into your project's repository. From there you can fully customize to your heart's content.
+Instead of installing from npm, you install the source code of Camber components directly into your project's repository. From there you can fully customize to your heart's content.
 
 The brilliance of this approach is you then fully own the source code for your components. No need to worry about npm updates or breaking changes. Whew!
 
-While Orion works great for installing the whole kit and caboodle, **you can also install components individually** for a choose-your-own-adventure.
+While Camber works great for installing the whole kit and caboodle, _you can also install components individually_ for a choose-your-own-adventure.
 
-Now we call this zero dependency but just as _serverless_ still has servers, Orion does add some dependencies. Namely `styled-components` or `emotion` along with `styled-system`. But the kicker is these will be added to your project.json where you are fully in control. Orion is never listed in your package.json.
+Now we call this zero dependency but just as _serverless_ still has servers, Camber does add some dependencies. Namely `styled-components` or `emotion` along with `styled-system`. But the kicker is these will be added to your project.json where you are fully in control. Camber is never listed in your package.json.
 
 ## Componentized Styles with CSS-in-JS
 
@@ -48,7 +48,7 @@ The brilliance of CSS-in-JS is you encapsulate styles on a component basis. Anyt
 
 Additionally with CSS-in-js, instead of making CSS classes, you only make components. What? No more coming up with class names?! That's right! Also, as with any React component, you can extend components to inherit base styles.
 
-Orion works with two popular CSS-in-JS libraries, [styled-components](https://styled-components.com) and [emotion](https://emotion.sh/). Both have comparable APIs so it's easy to swap one for the other. Orion then uses [styled-system](http://jxnblk.com/styled-system/) to add utility-first style props.
+Camber works with two popular CSS-in-JS libraries, [styled-components](https://styled-components.com) and [emotion](https://emotion.sh/). Both have comparable APIs so it's easy to swap one for the other. Camber then uses [styled-system](http://jxnblk.com/styled-system/) to add utility-first style props.
 
 See [Christopher Chedeau's talk from 2014](https://vimeo.com/116209150) for more on how CSS-in-JS improves upon global stylesheets.
 
@@ -67,7 +67,7 @@ Here's an example showing what utility-first CSS looks like in practice.
   <div class="mt-2">This has a 0.5rem top margin</div>
 </div>
 
-// Orion
+// Camber
 <Box flexDirection={['column', 'row']}>
   This content is a column on mobile but a row on desktop
   <Box mt={2}>This has a 0.5rem top margin</Box>
@@ -78,17 +78,17 @@ See [Adam Wathan's blog post](https://adamwathan.me/css-utility-classes-and-sepa
 
 ## Amazing Cross-Platform UX
 
-The web is broken. That means people who write CSS have to write long, scary rules to remove obnoxious things from some browsers and add things to others. Orion does all this for you.
+The web is broken. That means people who write CSS have to write long, scary rules to remove obnoxious things from some browsers and add things to others. Camber does all this for you.
 
-Orion removes the need for something like [normalize.css](https://github.com/necolas/normalize.css) because Orion components include the neccesary (and boring) normalizing styles in each component as needed.
+Camber removes the need for something like [normalize.css](https://github.com/necolas/normalize.css) because Camber components include the neccesary (and boring) normalizing styles in each component as needed.
 
-The severest offender you see in the wild is not removing hover styles on touch devices. You are a victim to this each time you have to tap twice to follow a link. The first tap shows the hover style; the second activates the link. Orion properly handles this out of the box.
+The severest offender you see in the wild is not removing hover styles on touch devices. You are a victim to this each time you have to tap twice to follow a link. The first tap shows the hover style; the second activates the link. Camber properly handles this out of the box.
 
-Another subtle but important detail is Orion disables the default iOS gray overlay when touching a button. Instead, Orion shows the same thing as clicking the button, typically a `scale(0.97)`.
+Another subtle but important detail is Camber disables the default iOS gray overlay when touching a button. Instead, Camber shows the same thing as clicking the button, typically a `scale(0.97)`.
 
 ## Consistent But Flexible Design System
 
-You can think of Orion as a design system starter kit. It has good defaults for all the basics and is ready for you customize to your brand identity.
+You can think of Camber as a design system starter kit. It has good defaults for all the basics and is ready for you customize to your brand identity.
 
 The spacing and typography scales are both based on a geometric progression.
 
@@ -99,7 +99,7 @@ const fontSizes = [12, 14, 16, 21, 28, 38, 50, 66, 88, 117]
 
 The default colors are from [Open Color](https://yeun.github.io/open-color/), a fantastic open-source color scheme for UIs.
 
-This design system is baked into the Orion component API thanks to [styled-system](http://jxnblk.com/styled-system/).
+This design system is baked into the Camber component API thanks to [styled-system](http://jxnblk.com/styled-system/).
 
 ## Design for the most common use case
 
@@ -109,12 +109,12 @@ Fully developmed component library ready for you to customize to the look and fe
 
 ## Truly Accessible
 
-Orion uses proper semantic elements i.e. button are buttons, not divs. But this is the easy stuff!
+Camber uses proper semantic elements i.e. button are buttons, not divs. But this is the easy stuff!
 
-For interactive components like modals and dropdown menus, Orion uses [Reach UI](https://ui.reach.tech/) which is proffesionally developed and tested for use with screen readers. Talk about standing on the sholders of giants!
+For interactive components like modals and dropdown menus, Camber uses [Reach UI](https://ui.reach.tech/) which is proffesionally developed and tested for use with screen readers. Talk about standing on the sholders of giants!
 
 ## FAQ
 
 **But how do you handle updates?**
 
-My opinion is component libraries shouldn't automatically update or change the styles in your app. Since Orion's components are presentational, there is no behavior to update or fix. In case of major API changes to styled-components or styled-system, you can check the latest Orion source and port the neccesary changes to your project.
+My opinion is component libraries shouldn't automatically update or change the styles in your app. Since Camber's components are presentational, there is no behavior to update or fix. In case of major API changes to styled-components or styled-system, you can check the latest Camber source and port the neccesary changes to your project.
