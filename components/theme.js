@@ -196,9 +196,13 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     font-family: ${fonts.sans};
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+    body {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+    }
   }
 
   *, *:before, *:after {
